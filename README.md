@@ -11,4 +11,5 @@ The list is subject to change.
 * [classList.addClass()](https://developer.mozilla.org/fr/docs/Web/API/Element/classList)
 * [classList.removeClass()](https://developer.mozilla.org/fr/docs/Web/API/Element/classList)
 * [classList.toggleClass()](https://developer.mozilla.org/fr/docs/Web/API/Element/classList)
+* [addEventListener()](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener)
 * and others
