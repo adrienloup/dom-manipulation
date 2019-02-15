@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>setAttribute()</title>
+</head>
+<body>
+
+	<p id="element" data-page="page1">element</p>
+
+	<script>
+
+		let element = document.querySelector('#element')
+
+		element.setAttribute('data-page', 'page2')
+
+		document.body.insertAdjacentHTML('afterbegin', element.getAttribute('data-page'))
+
+	</script>
+
+</body>
+</html>
