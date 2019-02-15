@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bubbling</title>
+</head>
+<body>
+
+	<button class="button">button</button>
+
+	<script>
+
+		window.addEventListener('click', function(e) {
+			if (e.target.classList.contains('button')) {
+				text = 'Button as clicked'
+			} else {
+				text = 'Not a match'
+			}
+			document.body.insertAdjacentHTML('afterbegin', text + '<br>')
+		}, false)
+
+	</script>
+
+</body>
+</html>
