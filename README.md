@@ -62,5 +62,6 @@ The list is subject to change.
 * [childElementCount](https://developer.mozilla.org/fr/docs/Web/API/ParentNode/childElementCount)
 * [hoisting](https://developer.mozilla.org/fr/docs/Glossaire/Hoisting)
 * [template string](http://www-lia.deis.unibo.it/materiale/JS/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings.html)
+* https://adrienloup.github.io/dom-manipulation/project/carousel.html
 
 * and others
