@@ -63,5 +63,6 @@ The list is subject to change.
 * [hoisting](https://developer.mozilla.org/fr/docs/Glossaire/Hoisting)
 * [template string](http://www-lia.deis.unibo.it/materiale/JS/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings.html)
 * [carousel](https://adrienloup.github.io/dom-manipulation/projects/carousel.html) (project)
+* [change color](https://adrienloup.github.io/dom-manipulation/projects/change-the-color-at-the-click.html) (project)
 
 * and others

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>change the color at the click</title>
+	<style>
+	
+	body {
+		display: flex;
+	}
+
+	div {
+		width: 100px;
+		height: 100px;
+		margin: auto;
+		border-radius: 10px;
+		background-color: red;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+	<script>
+
+		const div = document.getElementsByTagName('div')[0]
+		div.addEventListener('click', onClick, false)
+
+		function onClick() {
+			let colors = ['red', 'green', 'blue']
+			let color = colors[Math.floor(Math.random() * colors.length)]
+			console.log(color)
+			div.style.background = color
+		}
+
+	</script>
+
+</body>
+</html>
