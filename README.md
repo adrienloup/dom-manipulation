@@ -13,8 +13,8 @@ The list is subject to change.
 * [classList.toggleClass()](https://developer.mozilla.org/fr/docs/Web/API/Element/classList)
 * [anonymous-sel-executing-function](https://developer.mozilla.org/en-US/docs/Glossary/Self-Executing_Anonymous_Function) (closure)
 * [arrow-function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Fonctions/Fonctions_fl%C3%A9ch%C3%A9es) (closure)
-* [let](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/let) (closure)
-* self (closure)
+* [let](https://adrienloup.github.io/dom-manipulation/closure/let.html) (closure)
+* [self](https://adrienloup.github.io/dom-manipulation/closure/self.html) (closure)
 * [addEventListener()](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener)
 * bubbling
 * focus
@@ -62,6 +62,6 @@ The list is subject to change.
 * [childElementCount](https://developer.mozilla.org/fr/docs/Web/API/ParentNode/childElementCount)
 * [hoisting](https://developer.mozilla.org/fr/docs/Glossaire/Hoisting)
 * [template string](http://www-lia.deis.unibo.it/materiale/JS/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings.html)
-* https://adrienloup.github.io/dom-manipulation/project/carousel.html
+* [carousel](https://adrienloup.github.io/dom-manipulation/projects/carousel.html) (project)
 
 * and others
