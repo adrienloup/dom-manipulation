@@ -56,7 +56,7 @@ The list is subject to change.
 * [lastElementChild](https://developer.mozilla.org/fr/docs/Web/API/ParentNode/lastElementChild)
 * [lastChild](https://developer.mozilla.org/fr/docs/Web/API/Node/lastChild)
 * [firstElementChild](https://developer.mozilla.org/fr/docs/Web/API/ParentNode/firstElementChild)
-* [firstChild](https://developer.mozilla.org/fr/docs/Web/API/Node/firstChild)]
+* [firstChild](https://developer.mozilla.org/fr/docs/Web/API/Node/firstChild)
 * [children](https://developer.mozilla.org/fr/docs/Web/API/ParentNode/children)
 * [childNodes](https://developer.mozilla.org/fr/docs/Web/API/Node/childNodes)
 * [childElementCount](https://developer.mozilla.org/fr/docs/Web/API/ParentNode/childElementCount)
