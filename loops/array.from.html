@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Array.from()</title>
+</head>
+<body>
+
+	<div class="color">Red</div>
+	<div class="color">Blue</div>
+	<div class="color">Green</div>
+
+	<script>
+
+		Array.from(document.querySelectorAll('.color')).forEach((color, index) => {
+			document.body.insertAdjacentHTML('beforeend', color.textContent + '\n')
+		})
+
+	</script>
+
+</body>
+</html>

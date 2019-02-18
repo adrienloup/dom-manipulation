@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>querySelectorAll()</title>
+</head>
+<body>
+
+	<div data-color="red">Red</div>
+	<div data-color="blue">Blue</div>
+	<div data-color="green">Green</div>
+
+	<script>
+
+    var colors = document.querySelectorAll('[data-color]')
+
+		for (let i = 0, l = colors.length; i < l; i++) {
+			document.body.insertAdjacentHTML('beforeend', colors[i].textContent + '<br>')
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>extends class</title>
+</head>
+<body>
+
+	<script>
+
+    class ClassOfStudentA {
+
+      constructor(name = 'A class of students', ...students) {
+        this.name = name
+        this.students = students
+      }
+
+      listOfStudents() {
+        document.body.insertAdjacentHTML('beforeend', this.name + '<br>')
+        this.students.forEach(student => document.body.insertAdjacentHTML('beforeend', student + '<br>'))
+      }
+
+    }
+
+    class ClassOfStudentB extends ClassOfStudentA {
+
+      constructor(name = 'A class of students', ...students) {
+        super(name, ...students)
+        this.name = `${name}!`
+      }
+
+      addNewMethod() {
+        this.listOfStudents()
+      } 
+
+    }
+
+    const a = new ClassOfStudentA('A class of students', 'StudentA', 'StudentB', 'StudentC')
+    a.listOfStudents()
+
+    const b = new ClassOfStudentB('A class of students', 'StudentA', 'StudentB', 'StudentC')
+    b.addNewMethod()
+
+	</script>
+
+</body>
+</html>

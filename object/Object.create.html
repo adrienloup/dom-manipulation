@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Object.create()</title>
+</head>
+<body>
+
+	<script>
+
+    const student = {
+      name: 'name',
+      average: function() {
+        let total = 0
+        for(note of this.notes) {
+          total += note
+        }
+        return  Math.round(total / this.notes.length)
+      }
+    }
+
+    const student1 = Object.create(student)
+    student1.name = 'student1'
+    student1.notes = [11, 15, 12]
+    
+    document.body.insertAdjacentHTML('beforeend', 'student1:' + student1.average() + '<br>')
+
+    const student2 = Object.create(student)
+    student2.name = 'student2'
+    student2.notes = [18, 16, 14]
+    
+    document.body.insertAdjacentHTML('beforeend', 'student2:' + student2.average() + '<br>')
+
+    student.addMethodOjectOnly = function() {
+      return 'Student object only acces'
+    }
+
+    document.body.insertAdjacentHTML('beforeend', student.addMethodOjectOnly())
+
+	</script>
+
+</body>
+</html>

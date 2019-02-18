@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>spread operator</title>
+</head>
+<body>
+
+	<script>
+
+    let arrayA = ['key1', 'key2']
+    let arrayB = ['key0', ...arrayA]
+    let string = 'azerty'
+    let arrayC = ['key0', ...string]
+
+    document.body.insertAdjacentHTML('beforeend', arrayB.join(',\n') + '<br>')
+    document.body.insertAdjacentHTML('beforeend', arrayC.join(',\n'))
+
+	</script>
+
+</body>
+</html>

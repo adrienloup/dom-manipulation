@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hoisting</title>
+  <style type="text/css">
+    body{ font-size: 14px }
+    code{ background-color: #eee }
+    span{ color: #808080 }
+    strong{
+      display: block;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    i{
+      display: block;
+      margin: 10px 0;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+	<code>
+
+    <strong>variable_</strong>
+    <strong>#1</strong>
+
+    console.log(a) <span>// undefined</span><br>
+    var a = 'a'<br>
+
+    <i>hoisting: variable "a" is hoisted but has no assignment</i>
+
+    var a<br>
+    console.log(a) <span>// undefined</span><br>
+    a = 'a'<br>
+
+    <strong>#2</strong>
+
+    demo() <span>// demo is not a function because demo is undefined</span><br>
+    var demo = function() {<br>
+    &nbsp;console.log('demo')<br>
+    }<br>
+
+    <i>hoisting: variable demo is hoisted but not its assignment</i>
+
+    var demo<br>
+    demo() <span>// demo is not a function because demo is undefined</span><br>
+    demo = function() {<br>
+    &nbsp;console.log('demo')<br>
+    }<br>
+
+    <strong>function_</strong>
+    <strong>#1</strong>
+
+    demo() <span>// demo</span><br>
+    function demo() {<br>
+    &nbsp;console.log('demo')<br>
+    }<br>
+
+    <i>hoisting: function demo() is hoisted</i>
+
+    function demo() {<br>
+    &nbsp;console.log('demo')<br>
+    }<br>
+    demo() <span>// demo</span><br>
+
+    <strong>#2</strong>
+
+    var demo = function() {<br>
+    &nbsp;function a() {<br>
+    &nbsp;&nbsp;console.log('a')<br>
+    &nbsp;}<br>
+    &nbsp;return a()<br>
+    &nbsp;function a() {<br>
+    &nbsp;&nbsp;console.log('aa')<br>
+    &nbsp;}<br>
+    }<br>
+    demo() <span>// aa</span><br>
+
+    <i>hoisting: function a() is hoisted</i>
+
+    var demo<br>
+    demo = function() {<br>
+    &nbsp;function a() {<br>
+    &nbsp;&nbsp;console.log('a')<br>
+    &nbsp;}<br>
+    &nbsp;function a() {<br>
+    &nbsp;&nbsp;console.log('aa')<br>
+    &nbsp;}<br>
+    }<br>
+    return a()<br>
+    demo() <span>// aa</span><br>
+
+  </code>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>closure</title>
+</head>
+<body>
+
+  <script>
+
+    var obj = {
+      title: 'title',
+      method: function() {
+
+        var self = this
+
+        console.log(this.title)
+
+        var obj2 = {
+          method2: function() {
+            console.log(this.title)
+          }
+        }
+
+        obj2.method2()
+
+        var obj3 = {
+          method3: function() {
+            console.log(self.title)
+          }
+        }
+
+        obj3.method3()
+
+      }
+    }
+
+    obj.method()
+
+  </script>
+
+</body>
+</html>

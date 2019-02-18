@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Object.keys().forEach()</title>
+</head>
+<body>
+
+	<script>
+
+    const author = {
+      name: 'H. P. Lovecraft',
+      born: 1890,
+      from: 'Rhode Island'
+    }
+
+    Object.keys(author).forEach(function(key) {
+      document.body.insertAdjacentHTML('beforeend', author[key] + '\n')
+		})
+
+	</script>
+
+</body>
+</html>

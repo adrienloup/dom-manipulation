@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>prototype</title>
+</head>
+<body>
+
+	<script>
+
+    const Student = function(name, notes) {
+      this.name = name
+      if(notes != undefined) {
+        this.notes = notes
+      }
+    }
+
+    const student1 = new Student('Student1', [11, 15, 17])
+    const student2 = new Student('Student2')
+    student2.notes = [20, 14, 18]
+    const student3 = new Student('Student3')
+
+    console.log(student1)
+    console.log(student2)
+    console.log(student3)
+
+    Student.prototype.average = function() {
+      if(this.notes === undefined) {
+        return 'no note'
+      }
+      let total = 0
+      for(note of this.notes) {
+        total += note
+      }
+      return Math.round(total / this.notes.length)
+    }
+
+    document.body.insertAdjacentHTML('beforeend', student1.name + '\n')
+    document.body.insertAdjacentHTML('beforeend', student1.average() + '<br>')
+
+    document.body.insertAdjacentHTML('beforeend', student2['name'] + '\n')
+    document.body.insertAdjacentHTML('beforeend', student2.average() + '<br>')
+
+    document.body.insertAdjacentHTML('beforeend', student3.name + '\n')
+    document.body.insertAdjacentHTML('beforeend', student3.average() + '<br>')
+
+    Student.addMethodOjectOnly = function() {
+      return 'Student object only acces'
+    }
+
+    document.body.insertAdjacentHTML('beforeend', Student.addMethodOjectOnly())
+
+	</script>
+
+</body>
+</html>

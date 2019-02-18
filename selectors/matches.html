@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>matches()</title>
+</head>
+<body>
+
+	<div class="red" data-color="red">Red</div>
+	<div class="blue" data-color="blue">Blue</div>
+	<div class="green" data-color="green">Green</div>
+
+	<script>
+
+    const red = document.querySelector('.red')
+
+    if ( red.matches('[data-color="red"]')) {
+      document.body.insertAdjacentHTML('beforeend', red.textContent)
+    }
+
+	</script>
+
+</body>
+</html>

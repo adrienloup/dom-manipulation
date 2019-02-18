@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>default settings</title>
+</head>
+<body>
+
+	<script>
+
+    class ClassOfStudent {
+
+      constructor(name = 'A class of students', ...students) {
+        // if(name === undefined) {
+        //   name = 'A class of Students'
+        // }
+        this.name = name
+        this.students = students
+      }
+
+      listOfStudents() {
+        document.body.insertAdjacentHTML('beforeend', this.name + '<br>')
+        this.students.forEach(student => document.body.insertAdjacentHTML('beforeend', student + '<br>'))
+      }
+
+    }
+
+    const c = new ClassOfStudent('A class of supers students', 'StundentA', 'StundentB', 'StundentC')
+    c.listOfStudents()
+
+	</script>
+
+</body>
+</html>

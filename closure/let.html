@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>let</title>
+</head>
+<body>
+
+  <script>
+
+    for(var i = 0; i < 10; i++) {
+      window.setTimeout(function() {
+        document.body.insertAdjacentHTML('beforeend', '<br>' + i)
+      }, 1000)
+    }
+
+    document.body.insertAdjacentHTML('beforeend', 'Max ' + i)
+
+    window.setTimeout(function() {
+      document.body.insertAdjacentHTML('beforeend', '<br>Closure')
+    }, 2000)
+
+    for(let i = 0; i < 10; i++) {
+      window.setTimeout(function() {
+        document.body.insertAdjacentHTML('beforeend', '<br>' + i)
+      }, 3000)
+    }
+
+  </script>
+
+</body>
+</html>
