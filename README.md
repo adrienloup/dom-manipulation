@@ -16,6 +16,7 @@ The list is subject to change.
 * let (closure)
 * self (closure)
 * addEventListener
+* removeEventListener
 * DOMContentLoaded
 * bubbling
 * focus
