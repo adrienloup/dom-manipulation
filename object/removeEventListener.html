@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>removeEventListener</title>
+</head>
+<body>
+
+  <div style="position:fixed;">
+      <button>Delete</button>
+      <span></span>
+  </div>
+  <div style="height:300vh;"></div>
+
+	<script>
+
+class Obj {
+
+  constructor(elm) {
+    this.elm = document.querySelector(elm)
+    this.onScroll = this.onScroll.bind(this)
+    this.onClick = this.onClick.bind(this)
+    this.scrollTop = 0
+  }
+
+  init() {
+    window.addEventListener('scroll', this.onScroll, false)
+    this.elm.addEventListener('click', this.onClick, false)
+  }
+
+  onClick() {
+    window.removeEventListener('scroll', this.onScroll)
+  }
+
+  onScroll() {
+    this.scrollTop = window.pageYOffset || document.documentElement.scrollTop
+    document.getElementsByTagName('span')[0].innerHTML = this.scrollTop
+  }
+
+}
+
+const o = new Obj('button')
+o.init()
+
+	</script>
+
+</body>
+</html>
