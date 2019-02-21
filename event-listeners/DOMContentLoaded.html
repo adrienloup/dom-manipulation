@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOMContentLoaded</title>
+</head>
+<body>
+
+	<script>
+
+  for (var i=0; i<1000000000; i++) {
+	/* this synchronous script will delay DOM analysis.
+    So the event DOMContentLoaded will launch later. */
+	}
+
+	window.addEventListener('load', function(event) {
+    console.log('%c' + 'DOM fully loaded', 'color:red;')
+    document.body.insertAdjacentHTML('beforeend', 'DOM fully loaded' + '<br>')
+	})
+
+	document.addEventListener('DOMContentLoaded', function(event) {
+    console.log('%c' + 'DOM fully loaded and parsed', 'color:red;')
+    document.body.insertAdjacentHTML('beforeend', 'DOM fully loaded and parsed' + '<br>')
+	})
+
+	</script>
+
+</body>
+</html>
